@@ -11616,7 +11616,7 @@ form .form__box:last-of-type {
   }
 
   .reviews .swiper-slide {
-    width: 290px;
+    width: auto;
   }
 
   .reviews__text {
