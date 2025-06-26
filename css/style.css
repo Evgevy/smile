@@ -6508,7 +6508,7 @@ form .form__box:last-of-type {
 
 .team__image {
   width: 400px;
-  height: 450px;
+  height: 465px;
   margin: 0 auto;
 }
 
@@ -8598,6 +8598,8 @@ form .form__box:last-of-type {
 }
 
 .price__min-link {
+  display: block;
+  margin: 0 auto;
   font-family: Gotham Pro;
   font-weight: 450;
   font-size: 14px;
@@ -8620,6 +8622,75 @@ form .form__box:last-of-type {
 
 .price__min-link:hover {
   opacity: 0.7;
+}
+
+.price .price__min {
+  overflow: hidden;
+  max-height: none;
+  -webkit-transition: max-height 0.3s ease;
+  -o-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
+  position: relative;
+}
+
+.price .price__min.collapsed {
+  overflow: visible;
+}
+
+.price .price__min.collapsed li.price__min-item:nth-child(n+6) {
+  display: none;
+}
+
+.price .price__min.collapsed li.price__min-item:nth-child(4),
+.price .price__min.collapsed li.price__min-item:nth-child(5) {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.price .form .form__wrapper {
+  padding: 50px 0;
+}
+
+.price .form .container-title {
+  margin-bottom: 20px;
+  min-height: auto;
+}
+
+.price .form .position-absolute {
+  top: -30px;
+}
+
+.price .form .container-small {
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+.price .form .form__text {
+  margin-bottom: 20px;
+}
+
+.price .form .custom-input__label {
+  margin-bottom: 6px;
+}
+
+.price .form .form-checkbox {
+  margin-bottom: 20px;
+}
+
+.price .form .form-checkbox__label {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.price .form .form__image {
+  width: 100%;
+  height: 460px;
 }
 
 .mobile {
@@ -10071,6 +10142,40 @@ form .form__box:last-of-type {
   .grade .swiper-slide:first-child {
     border: 1px solid rgb(232, 232, 232);
   }
+
+  .price .form .form__wrapper {
+    padding: 40px 0;
+  }
+
+  .price .form .container-small {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .price .form .form__text {
+    font-size: 13px;
+  }
+
+  .price .form .form__text a {
+    display: contents;
+    font-size: 13px;
+  }
+
+  .price .form .form__top {
+    margin-bottom: 20px;
+  }
+
+  .price .form .form-checkbox__text {
+    font-size: 11px;
+  }
+
+  .price .form .form__image {
+    height: 405px;
+  }
+
+  .price .form .form__btn {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -11070,6 +11175,11 @@ form .form__box:last-of-type {
   .price__min-item span {
     font-size: 14px;
   }
+
+  .price .form .container-small {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 661px) {
@@ -11420,6 +11530,10 @@ form .form__box:last-of-type {
 
   .price__min-item p {
     font-size: 12px;
+  }
+
+  .price .form .custom-input__label {
+    margin-bottom: 6px;
   }
 
   .mobile {
