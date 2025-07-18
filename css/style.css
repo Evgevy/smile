@@ -9853,6 +9853,7 @@ form .form__box:last-of-type {
   -o-transition: 0.3s;
   margin-top: 20px;
   transition: 0.3s;
+  color: rgb(26, 25, 25) !important;
 }
 
 .reviews-block__btn:after {
