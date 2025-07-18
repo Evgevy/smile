@@ -9701,6 +9701,7 @@ form .form__box:last-of-type {
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
+  margin-bottom: 50px;
 }
 
 .reviews-block__item {
@@ -9914,6 +9915,33 @@ form .form__box:last-of-type {
 .reviews-block .reviews-block__card-info--image img.expanded {
   mask-image: none;
   -webkit-mask-image: none;
+}
+
+.reviews-block__more {
+  max-width: 340px;
+  width: 100%;
+  background: rgb(131, 117, 78);
+  font-family: Gotham Pro;
+  font-weight: 400;
+  font-style: Medium;
+  font-size: 12px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  padding: 24px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 auto;
+  display: block;
+}
+
+.reviews-block__more:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1800px) {
